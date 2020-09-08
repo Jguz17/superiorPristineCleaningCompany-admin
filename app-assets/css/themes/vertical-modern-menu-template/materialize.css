@@ -6256,7 +6256,7 @@ small
     position: fixed;
     z-index: 10000;
 
-    display: block;
+    display: none;
 }
 
 @media only screen and (max-width: 600px)
