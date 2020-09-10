@@ -94,7 +94,7 @@ document.querySelector('#create-booking-form').addEventListener('submit', (e) =>
         <td>${data.phone}</td>
         <td>${data.address}</td>
         <td>${data.datetime}</td>
-        <td class="center-align"><a><i onclick='removeBooking(this)' data-id=${data.id} class="fas fa-times remove-booking"></i></a></td>
+        <td class="center-align"><a><i style='color: #ff4081' onclick='removeBooking(this)' data-id=${data.id} class="fas fa-times remove-booking"></i></a></td>
         <td id='confirm' class="center-align"><a><i style='color: #ff4081' onclick='confirmBooking(this)' class="material-icons green-text confirm-booking">check</i></a></td>
         </tr>`
     })

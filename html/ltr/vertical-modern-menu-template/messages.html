@@ -175,25 +175,17 @@ License: You must have a valid license purchased only from themeforest(the above
       <div class="row vertical-modern-dashboard">
 
         <div class="col s12">
-          <div class="card subscriber-list-card animate fadeRight">
-            <div class="card-content pb-1">
-              <h4 class="card-title mb-0">Pending Bookings</h4>
-           </div>
-             <table class="subscription-table responsive-table highlight">
-                <thead>
-                   <tr>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Phone</th>
-                      <th>Address</th>
-                      <th>Datetime</th>
-                      <th>Delete</th>
-                      <th>Confirm</th>
-                   </tr>
-                </thead>
-                <tbody id='booking-list' >
-                </tbody>
-             </table>
+          <div id='messages-container' class="card subscriber-list-card animate fadeRight">
+            <div class="col s12 m4 l4">
+                <div class="card animate fadeLeft">
+                    <div class="card-content">
+                        <h6 class="mb-0 mt-0 display-flex justify-content-between">Pending Bookings <i
+                                class="material-icons float-right"></i>
+                        </h6>
+                        <p>some text</p>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -201,14 +193,6 @@ License: You must have a valid license purchased only from themeforest(the above
   </div>
 </div>
 <!-- Content Area Ends -->
-
-<!-- Add new email popup -->
-<div style="bottom: 54px; right: 19px;" class="fixed-action-btn direction-top">
-  <a class="btn-floating btn-large primary-text gradient-shadow compose-email-trigger" href="#">
-    <i class="material-icons">add</i>
-  </a>
-</div>
-<!-- Add new email popup Ends-->
 
 <!-- email compose sidebar -->
 <div class="email-compose-sidebar">
@@ -832,7 +816,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- BEGIN PAGE LEVEL JS-->
     <script src="../../../app-assets/js/scripts/app-email.js"></script>
     <!-- END PAGE LEVEL JS-->
-    <script src="../../../app-assets/js/bookings.js"></script>
+    <script src="../../../app-assets/js/accepted-bookings.js"></script>
 
   </body>
 </html>
