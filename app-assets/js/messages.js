@@ -27,21 +27,21 @@ async function loadMessages() {
                     </h6>
                     <p style='font-weight: bold' >${message.datetime}</p>
                     <span>${message.content}</span>
-                    <button style='display: block; width: 100%; border: none; background-color: #ff4081; border-radius: 3px; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2)'>Remove</button>
+                    <button data-id=${message.id} onclick='removeMessage(this)' style='display: block; width: 100%; border: none; background-color: #ff4081; border-radius: 3px; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2)'>Remove</button>
                 </div>  
             </div>
         </div>`
     })
 }
 
-const removebooking = (booking) => {
-    const bookingID = booking.parentElement.parentElement.parentElement.dataset.id
-    const row = booking.parentElement.parentElement.parentElement;
+const removeMessage = (message) => {
+    const messageID = message.dataset.id
+    const card = message.parentElement.parentElement.parentElement;
     
-    fetch(`https://spcc-api.herokuapp.com/api/v1/accepted_bookings/${bookingID}`, { method: 'DELETE' })
+    fetch(`https://spcc-api.herokuapp.com/api/v1/messages/${messageID}`, { method: 'DELETE' })
     .then((res) => res.json())
 
-    row.remove()
+    card.remove()
 }
 
 loadMessages()
