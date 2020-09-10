@@ -3,7 +3,6 @@
 ------------------------------------------*/
 .app-email .content-area
 {
-    width: calc(100% - 280px);
     margin-top: 49px;
 }
 
@@ -14,7 +13,6 @@
 
 .app-email .content-area.content-right
 {
-    float: right;
 }
 
 .app-email .content-area .app-wrapper .app-search

@@ -3862,7 +3862,7 @@ th
     line-height: 1.5rem;
 
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 10px 10px 0;
 
     border-bottom: 1px solid #e0e0e0;
     background-color: #fff;
@@ -3873,7 +3873,7 @@ th
     position: relative;
 
     min-height: 84px;
-    padding-left: 72px;
+    /* padding-left: 72px; */
 }
 
 .collection .collection-item.avatar:not(.circle-clipper) > .circle,

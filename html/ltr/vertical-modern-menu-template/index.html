@@ -20,7 +20,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google.">
     <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard">
     <meta name="author" content="ThemeSelect">
-    <title>Dashboard Modern | Materialize - Material Design Admin Template</title>
+    <title>Dashboard</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/favicon/apple-touch-icon-152x152.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/favicon/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -141,16 +141,15 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- BEGIN: SideNav-->
     <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square">
       <div class="brand-sidebar">
-        <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="index.html"><img class="hide-on-med-and-down" src="../../../app-assets/images/logo/materialize-logo-color.png" alt="materialize logo"/><img class="show-on-medium-and-down hide-on-med-and-up" src="../../../app-assets/images/logo/materialize-logo.png" alt="materialize logo"/><span class="logo-text hide-on-med-and-down">Materialize</span></a><a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
+        <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="index.html"><img class="hide-on-med-and-down" src="../../../app-assets/images/logo/logo.png" alt="materialize logo"/><img class="show-on-medium-and-down hide-on-med-and-up" src="../../../app-assets/images/logo/materialize-logo.png" alt="materialize logo"/><span class="logo-text hide-on-med-and-down">Admin Panel</span></a><a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
       </div>
       <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
         <li class="navigation-header"><a class="navigation-header-text">Applications</a><i class="navigation-header-icon material-icons">more_horiz</i>
         </li>
-        <li class="bold"><a class="waves-effect waves-cyan " href="app-email.html"><i class="material-icons">work_outline</i><span class="menu-title" data-i18n="Mail">Pending Bookings</span></a>
+        <li class="bold"><a class="waves-effect waves-cyan " href="pending-bookings.html"><i class="material-icons">work_outline</i><span class="menu-title" data-i18n="Mail">Pending Bookings</span></a>
         </li>
-        <li class="bold"><a class="waves-effect waves-cyan " href="app-email.html"><i class="material-icons">done_outline</i><span class="menu-title" data-i18n="Mail">Accepted Bookings</span></a>
-        </li><li class="bold"><a class="waves-effect waves-cyan " href="app-email.html"><i class="material-icons">mail_outline</i><span class="menu-title" data-i18n="Mail">Messages</span></a>
-        </li><li class="bold"><a class="waves-effect waves-cyan " href="app-email.html"><i class="material-icons">delete_outline</i><span class="menu-title" data-i18n="Mail">Thrash</span></a>
+        <li class="bold"><a class="waves-effect waves-cyan " href="accepted-bookings.html"><i class="material-icons">done_outline</i><span class="menu-title" data-i18n="Mail">Accepted Bookings</span></a>
+        </li><li class="bold"><a class="waves-effect waves-cyan " href="messages.html"><i class="material-icons">mail_outline</i><span class="menu-title" data-i18n="Mail">Messages</span></a>
         </li>
       </ul>
       <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
@@ -170,13 +169,12 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="col s12 m8 l8">
       <div class="card subscriber-list-card animate fadeRight">
          <div class="card-content pb-1">
-            <h4 class="card-title mb-0">Bookings List <i class="material-icons float-right">more_vert</i></h4>
+            <h4 class="card-title mb-0">Accepted Bookings</h4>
          </div>
          <table class="subscription-table responsive-table highlight">
             <thead>
                <tr>
                   <th>Name</th>
-                  <th>Email</th>
                   <th>Phone</th>
                   <th>Address</th>
                   <th>Datetime</th>
@@ -184,14 +182,6 @@ License: You must have a valid license purchased only from themeforest(the above
                </tr>
             </thead>
             <tbody id='booking-list' >
-               <tr>
-                  <td>Hard Coded</td>
-                  <td>ABC Fintech LTD.</td>
-                  <td>Jan 1,2019</td>
-                  <td><span class="badge pink lighten-5 pink-text text-accent-2">Close</span></td>
-                  <td>$ 1000.00</td>
-                  <td class="center-align"><a href="#"><i class="material-icons pink-text">clear</i></a></td>
-               </tr>
             </tbody>
          </table>
       </div>
@@ -201,11 +191,11 @@ License: You must have a valid license purchased only from themeforest(the above
          <!-- Current Balance -->
          <div class="card animate fadeLeft">
             <div class="card-content">
-               <h6 class="mb-0 mt-0 display-flex justify-content-between">Completed Bookings <i
-                     class="material-icons float-right">more_vert</i>
+               <h6 class="mb-0 mt-0 display-flex justify-content-between">Pending Bookings <i
+                     class="material-icons float-right"></i>
                </h6>
 
-               <h5 id='completed-bookings' class="center-align">$ enter bookings here</h5>
+               <h5 id='completed-bookings' class="center-align"></h5>
             </div>
          </div>
       </div>
@@ -214,27 +204,9 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- Recent Buyers -->
         <div class="card recent-buyers-card animate fadeUp">
            <div class="card-content">
-              <h4 class="card-title mb-0">Recent Messages <i class="material-icons float-right">more_vert</i></h4>
-              <p class="medium-small pt-2">Today</p>
-              <ul class="collection mb-0">
-                 <li class="collection-item avatar">
-                    <img src="../../../app-assets/images/avatar/avatar-7.png" alt="" class="circle" />
-                    <p class="font-weight-600">John Doe</p>
-                    <p class="medium-small">18, January 2019</p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
-                 </li>
-                 <li class="collection-item avatar">
-                    <img src="../../../app-assets/images/avatar/avatar-3.png" alt="" class="circle" />
-                    <p class="font-weight-600">Adam Garza</p>
-                    <p class="medium-small">20, January 2019</p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
-                 </li>
-                 <li class="collection-item avatar">
-                    <img src="../../../app-assets/images/avatar/avatar-5.png" alt="" class="circle" />
-                    <p class="font-weight-600">Jennifer Rice</p>
-                    <p class="medium-small">25, January 2019</p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
-                 </li>
+              <h4 class="card-title mb-0">Recent Messages <i class="material-icons float-right"></i></h4>
+              <ul id='messages-list' class="collection mb-0">
+
               </ul>
            </div>
         </div>
@@ -272,7 +244,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <footer class="page-footer footer footer-static footer-dark gradient-45deg-indigo-purple gradient-shadow navbar-border navbar-shadow">
       <div class="footer-copyright">
-        <div class="container"><span>&copy; 2020          <a href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">PIXINVENT</a> All rights reserved.</span><span class="right hide-on-small-only">Design and Developed by <a href="https://pixinvent.com/">PIXINVENT</a></span></div>
+        <div class="container"><span>&copy; 2020 Superior Pristine Cleaning Company</a> All rights reserved.</span></div>
       </div>
     </footer>
 
@@ -296,7 +268,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <script src="../../../app-assets/js/scripts/dashboard-modern.js"></script>
     <script src="../../../app-assets/js/scripts/intro.js"></script>
     <!-- END PAGE LEVEL JS-->
-    <script src="../../../app-assets/js/bookings.js"></script>
+    <script src="../../../app-assets/js/dashboard.js"></script>
 
   </body>
 </html>
