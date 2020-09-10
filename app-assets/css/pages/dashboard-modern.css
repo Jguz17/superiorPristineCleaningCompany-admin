@@ -173,7 +173,7 @@
 .recent-buyers-card .collection .collection-item
 {
     min-height: auto;
-    padding-left: 55px;
+    /* padding-left: 55px; */
 
     border-bottom: none;
 }
