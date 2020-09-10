@@ -3,7 +3,7 @@
 ------------------------------------------*/
 .app-email .content-area
 {
-    margin-top: 49px;
+    /* margin-top: 49px; */
 }
 
 .app-email .content-area.content-left
@@ -535,7 +535,7 @@ body.dragging *
 {
     .content-area
     {
-        margin-top: -110px !important;
+        margin-top: 0;
     }
     .content-area.content-right,
     .content-area.content-left
